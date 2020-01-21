@@ -58,15 +58,22 @@ namespace DecisionTreeHelper.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        [HttpPost]
+        
+        [HttpGet("Home/SubmitResult")]
         public void SubmitResult(string result)
         {
-            //save json searlize data of questions and answers in result.txt file
-            System.IO.File.WriteAllText(@"result.txt", result);
+            try
+            {
+                //save json searlize data of questions and answers in result.txt file
+                System.IO.File.WriteAllText(@"result.txt", result);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
-
-        [HttpGet]
+        
+        [HttpGet("Home/GetDecisionTree")]
         public List<Result> GetDecisionTree()
         {
             List<Result> result = new List<Result>();
