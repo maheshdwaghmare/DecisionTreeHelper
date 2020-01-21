@@ -1,0 +1,51 @@
+﻿<style type="text/css">
+    body {
+        font-family: 'Times New Roman';
+        font-size:16px;
+    }
+    #decisiontree td {
+        padding:5px;
+    }
+</style>
+<p class="quiz-area" ng-show="inProgress">
+    <div ng-show="!quizOver" ng-repeat="option1 in question" ng-init="parentIndex = $index">
+        <h2 id="question">{{option1.question}}</h2>
+        <div id="options">
+            <div ng-model="selected" ng-repeat="option in option1.options">
+                <label>
+                    <input type="radio" ng-value="option.name" ng-model="option.selectedRadio" name="myName{{$parent.$index}}" ng-click="checkAnswer(this, $event)">
+                    {{option.name}}
+                </label>
+            </div>
+        </div>
+        <!--<div>
+            <button ng-click="checkAnswer(option1)" class="next-question">Next</button>
+        </div>-->
+    </div>
+    <div ng-show="quizOver">
+        <h2>Quiz is over</h2>
+        <!--<button ng-click="reset()">Play again</button>-->
+    </div>
+<p style="white-space: pre;"><b>{{choices}}</b></p>
+<div class="intro" ng-show="!inProgress">
+    <p>Welcome to the Decision Tree App</p>
+    <button id="startQuiz" ng-click="start()">Start the Quiz</button>
+</div>
+<br />
+<div class="intro" ng-show="!inProgress">
+    <p>Display Saved Decision tree</p>
+    <button id="startQuiz" ng-click="display()">Show Result</button>
+    <p style="margin-top:5px;" ng-show="!inProgress">
+            <div>
+                <b style="color: red"> {{Error}}</b>
+                <table border="1" id="decisiontree">
+                    <tr ng-repeat="question in decisiontree">
+                        <td style="width: 20%">{{question.id}}</td>
+                        <td style="width: 60%">{{question.question}}</td>
+                        <td style="width: 10%">{{question.answer}}</td>
+                    </tr>
+                </table>
+            </div>
+        </b>
+    </p>
+</div>
