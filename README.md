@@ -1,4 +1,4 @@
-# Decision Tree Helper
+# Job Portal (Decision Tree Helper)
 
 Created DecisionTreeHelper Project with .Net Core and AngularJS. User can select different choices Yes/No and based on choices user will get next questions. In the end, user will get outcome.
 User can able to see choices he has made for last questions while selecting answering questions. After submitting result, it will get stored in text file in JSON format. When user click on Show Result button, he will be able to get choices he has made in last time.
@@ -15,6 +15,18 @@ Windows Server configured with the Web Server (IIS) server role. If your server 
 2. Install [.Net Core Windows Server Hosting](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 
 ## Deployment
+
+*Quickly run the application without Deployment.*
+
+1. Clone and download copy of the Git Repo. 
+
+2. Open with Visual Studio 2017.
+
+3. Build the Solution from Build Solution options under Build Top menu item.
+
+4. Hit F5 for Quickly run the application.
+
+*IIS Deployment*
 
 1. As I have already made changes in Program.cs and Startup.cs files, no need to make changes.
 
@@ -37,6 +49,7 @@ Windows Server configured with the Web Server (IIS) server role. If your server 
 ## Built With
 
 * [.Net Core Framework 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) - The web framework used
+* Angular JS 1.0.8
 
 ## Authors
 
