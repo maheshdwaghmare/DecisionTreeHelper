@@ -9,12 +9,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-.Net Core SDK
+1. Install .Net Core SDK
 Windows Server configured with the Web Server (IIS) server role. If your server isn't configured to host websites with IIS, follow the guidance in the IIS configuration section of the [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-3.1#iis-configuration) article and then return to this tutorial.
+
+2. Install [.Net Core Windows Server Hosting](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.1-windows-hosting-bundle-installer)
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+1. As I have already made changes in Program.cs and Startup.cs files, no need to make changes.
+
+2. Create Application Pool in IIS with .Net Framework version as 'No Managed Code' and Manage pipelined mode as 'Integrated'.
+
+3. Publish Application in specific folder and copy contents viz. wwwroor folder. DLLs and web.config files in newly created folder under wwwroot.
+
+4. Create Website using already created App Pool and specify newly created folder path.
 
 ## Built With
 
@@ -23,7 +31,3 @@ Add additional notes about how to deploy this on a live system
 ## Authors
 
 * **Mahesh Waghmare**
-
-## Acknowledgments
-
-* Coding Challenge from one of the well reputed Company.
