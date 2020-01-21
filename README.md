@@ -28,6 +28,12 @@ Windows Server configured with the Web Server (IIS) server role. If your server 
 
 ![1. Job Portal Home screen](https://github.com/maheshdwaghmare/DecisionTreeHelper/blob/master/Projects%20snapshots/1.%20Job%20Portal%20Home%20screen.JPG)
 
+![2. Explore Open Positions](https://github.com/maheshdwaghmare/DecisionTreeHelper/blob/master/Projects%20snapshots/2.%20Explore%20Open%20Positions.JPG)
+
+![3. Explored Open Positions](https://github.com/maheshdwaghmare/DecisionTreeHelper/blob/master/Projects%20snapshots/3.%20Explored%20Open%20Positions.JPG)
+
+![4. Last Explored Position](https://github.com/maheshdwaghmare/DecisionTreeHelper/blob/master/Projects%20snapshots/4.%20Last%20Explored%20Position.JPG)
+
 ## Built With
 
 * [.Net Core Framework 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) - The web framework used
