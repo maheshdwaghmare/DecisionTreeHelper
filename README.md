@@ -24,6 +24,10 @@ Windows Server configured with the Web Server (IIS) server role. If your server 
 
 4. Create Website using already created App Pool and specify newly created folder path.
 
+## Project snapshots
+
+![1. Job Portal Home screen](https://github.com/maheshdwaghmare/DecisionTreeHelper/blob/master/Projects%20snapshots/1.%20Job%20Portal%20Home%20screen.JPG)
+
 ## Built With
 
 * [.Net Core Framework 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) - The web framework used
