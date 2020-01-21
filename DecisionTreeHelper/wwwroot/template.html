@@ -18,25 +18,20 @@
                 </label>
             </div>
         </div>
-        <!--<div>
-            <button ng-click="checkAnswer(option1)" class="next-question">Next</button>
-        </div>-->
     </div>
     <div ng-show="quizOver">
-        <h2>Quiz is over</h2>
-        <!--<button ng-click="reset()">Play again</button>-->
     </div>
 <p style="white-space: pre;"><b>{{choices}}</b></p>
 
 <p style="white-space: pre; color:green"><b>{{saveStatus}}</b></p>
 <div class="intro" ng-show="!inProgress">
-    <p>Welcome to the Decision Tree App</p>
-    <button id="startQuiz" ng-click="start()">Start the Quiz</button>
+    <p>Welcome to ABC's Job Portal</p>
+    <button id="startQuiz" ng-click="start()">Explore Open Positions</button>
 </div>
 <br />
 <div class="intro" ng-show="!inProgress">
-    <p>Display Saved Decision tree</p>
-    <button id="startQuiz" ng-click="display()">Show Result</button>
+    <p>Last Interaction Details</p>
+    <button id="startQuiz" ng-click="display()">Last Explored Position</button>
     <p style="margin-top:5px;" ng-show="!inProgress">
             <div>
                 <b style="color: red"> {{Error}}</b>

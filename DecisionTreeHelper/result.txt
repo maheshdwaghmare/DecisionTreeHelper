@@ -1,1 +1,1 @@
-[{"Question":"Do I want a Doughnut?","Answer":"No"},{"Question":"Maybe you want an apple?"}]
+[{"Question":"Are you looking for Job change?","Answer":"Yes"},{"Question":"Are you looking for .NET Developer position?","Answer":"Yes"},{"Question":"Are you open for relocation?","Answer":"Yes"},{"Question":"We do have open positions across the world. Please apply for applicable position by visiting our site and we will get back to you."}]

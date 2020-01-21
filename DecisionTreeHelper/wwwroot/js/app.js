@@ -18,6 +18,7 @@ app.directive('quiz', function (quizFactory) {
                 scope.questionNo = 1;
                 scope.Error = "";
                 scope.saveStatus = "";
+                scope.decisiontree = [];
                 scope.getQuestionById("root", "Question1");
             };
             scope.reset = function () {
@@ -30,6 +31,7 @@ app.directive('quiz', function (quizFactory) {
                 scope.Error = "";
                 scope.results = [];
                 scope.question = [];
+                scope.decisiontree = [];
                 scope.saveStatus = "";
                 questionNo = 1;
             };
@@ -98,7 +100,7 @@ app.directive('quiz', function (quizFactory) {
                         data: { result: results },
                         contentType: 'application/json; charset=utf-8',
                         success: function (response) {
-                            scope.saveStatus += "Decision tree has been saved!";
+                            scope.saveStatus += "Thank you for your time.";
                         },
                         async: false
                     });
@@ -141,7 +143,7 @@ app.factory('quizFactory', function () {
     var questions = [{
         parentQuestionId: "root",
         questionId: "Question1",
-        question: "Do I want a Doughnut?",
+        question: "Are you looking for Job change?",
         options: [{
             name: "Yes",
             selected: false
@@ -152,7 +154,7 @@ app.factory('quizFactory', function () {
     }, {
         parentQuestionId: "Question1Yes",
         questionId: "Question2",
-        question: "Do I deserve it?",
+            question: "Are you looking for .NET Developer position?",
         options: [{
             name: "Yes",
             selected: false
@@ -164,12 +166,12 @@ app.factory('quizFactory', function () {
     {
         parentQuestionId: "Question1No",
         questionId: "Question3",
-        question: "Maybe you want an apple?"
+        question: "Thank you, Please get in touch with us in future in case you decide to switch."
     },
     {
         parentQuestionId: "Question2Yes",
         questionId: "Question4",
-        question: "Are you sure?",
+        question: "Are you open for relocation?",
         options: [{
             name: "Yes",
             selected: false
@@ -181,7 +183,7 @@ app.factory('quizFactory', function () {
     {
         parentQuestionId: "Question2No",
         questionId: "Question5",
-        question: "Is it a good doughnut?",
+        question: "Are you looking for Full Stack Developer position?",
         options: [{
             name: "Yes",
             selected: false
@@ -193,22 +195,22 @@ app.factory('quizFactory', function () {
     {
         parentQuestionId: "Question4Yes",
         questionId: "Question6",
-        question: "Get it?"
+        question: "We do have open positions across the world. Please apply for applicable position by visiting our site and we will get back to you."
     },
     {
         parentQuestionId: "Question4No",
         questionId: "Question7",
-        question: "Do jumping jacks first?"
+        question: "Please do let us know in future if you are open for relocation?"
     },
     {
         parentQuestionId: "Question5Yes",
         questionId: "Question8",
-        question: "What are you waiting for? Grab it now."
+        question: "Great!!! Please share your CV and we will get back to you."
     },
     {
         parentQuestionId: "Question5No",
         questionId: "Question9",
-        question: "Wait till you find a sinful, unforgettable doughnut."
+        question: "Sorry, We only have above open positions."
     }];
 
     return {

@@ -90,7 +90,7 @@ namespace DecisionTreeHelper.Controllers
             }
             catch (FileNotFoundException)
             {
-                result.Add(new Result { Error = "Result not found. Please start a Quiz!" });
+                result.Add(new Result { Error = "Result not found. Please Explore Open Positions!" });
             }
             return result;
         }
