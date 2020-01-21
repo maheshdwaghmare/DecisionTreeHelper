@@ -1,11 +1,14 @@
 # Job Portal (Decision Tree Helper)
 
-Created DecisionTreeHelper Project with .Net Core and AngularJS. User can select different choices Yes/No and based on choices user will get next questions. In the end, user will get outcome.
-User can able to see choices he has made for last questions while selecting answering questions. After submitting result, it will get stored in text file in JSON format. When user click on Show Result button, he will be able to get choices he has made in last time.
+Created JobPortal (DecisionTreeHelper) Project with *.Net Core* and *AngularJS*. 
+User can explore different open positions and answer Yes/No questions and based on answers user will get next questions. 
+While answering questions, user can see already selected answers.
+After submitting result, it will get stored in text file in JSON format. 
+When user click on Last Explored Position, he will be able to get Last Interaction Details.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone and DOwnload Project on your local machine. Please follow instructions under Delpoyment section for running the Project.
 
 ### Prerequisites
 
@@ -32,7 +35,7 @@ Windows Server configured with the Web Server (IIS) server role. If your server 
 
 2. Create Application Pool in IIS with .Net Framework version as 'No Managed Code' and Manage pipelined mode as 'Integrated'.
 
-3. Publish Application in specific folder and copy contents viz. wwwroor folder. DLLs and web.config files in newly created folder under wwwroot.
+3. Publish Application in specific folder and copy contents viz. wwwroot folder. DLLs and web.config files in newly created folder under wwwroot.
 
 4. Create Website using already created App Pool and specify newly created folder path.
 
